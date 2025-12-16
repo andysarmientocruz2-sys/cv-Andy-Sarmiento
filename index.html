@@ -12,6 +12,7 @@
   }
 
   .container {
+    position: relative;
     max-width: 900px;
     margin: 60px auto;
     background: rgba(15, 23, 42, 0.85);
@@ -80,16 +81,28 @@
     color: #9ca3af;
     text-align: center;
   }
-  </style>
+/* QR en esquina superior derecha */
+  .qr-box {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .qr-box img {
+    width: 90px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+</style>
 </head>
 <body>
   <div class="container">
-<div class="qr-box">
-  <a href="https://andysarmientocruz2-sys.github.io/cv-Andy-Sarmiento/" target="_blank">
-    <img src="chrome_qrcode_1765852598086.png"
-         alt="QR CV Andy Sarmiento">
-  </a>
-</div>
+
+    <div class="qr-box">
+      <a href="https://andysarmientocruz2-sys.github.io/cv-Andy-Sarmiento/" target="_blank">
+        <img src="chrome_qrcode_1765852598086.png" alt="QR CV Andy Sarmiento">
+      </a>
+    </div>
 
 <h1>Andy Alexander Sarmiento Cruz</h1>
 <p><strong>Edad:</strong> 14 años (15 en febrero)</p>
